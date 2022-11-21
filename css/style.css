@@ -19,6 +19,7 @@ body {
     line-height: 1.6;
     color: #1B242A;
     display: inline-block;
+    width: 100%;
 }
 header {
     background-color: #364652;
@@ -32,8 +33,10 @@ header {
     width: 100%;
 }
 main {
-    padding-top: 133px;
+    padding-top: 120px;
     padding-bottom: 20px;
+    padding-left: auto;
+    padding-right: auto;
 }
 footer {
     background-color: #364652;
@@ -50,7 +53,8 @@ h1 {
 }
 h2 {
     font-size: 1.75em;
-    font-weight: 650;
+    font-weight: 500;
+    text-align: center;
 }
 h3 {
     font-size: 1.35em;
@@ -113,43 +117,67 @@ a:active {
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #FE5F60;
-    transition: 0.2s opacity;
     text-decoration: none;
+    transition: 0.3s opacity;
+    transition-property: opacity;
 }
 .button:hover {
-    opacity: 0.7;
     color: #1B242A;
     text-decoration: none;
+    opacity: 0.8;
 }
 .button:active {
     opacity: 0.8;
     text-decoration: none;
 }
-
 .button.contact {
     background-color: transparent;
     color: #F4EDED;
     text-transform: uppercase;
     border: 2px solid #F7D06F;
+    transition: 0.5s opacity;
+    transition-property: opacity;
 }
 .button.contact:visited {
     color: #301E60;
 }
 .button.contact:hover {
-    background-color: #F7D06F;;
+    background-color: #F7D06F;
     color: #1B242A;
-    border: 1px solid #F7D06F;;
+    border: 1px solid #F7D06F;
+    opacity: 0.8;
 }
 .button.contact:active {
     opacity: 0.8;
     text-decoration: none;
 }
+.button.resume {
+    background-color: transparent;
+    color: #1B242A;
+    text-transform: uppercase;
+    border: 2px solid #F7D06F;
+    transition: 0.3s opacity;
+    transition-property: opacity;
+}
+.button.resume:hover {
+    background-color: #F7D06F;
+    color: #1B242A;
+    border: 1px solid #F7D06F;
+}
+.button.resume:active {
+    opacity: 0.8;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.project {
+    float: left;
+}
 .fit-picture {
     width: 250px;
 }
-
-/* Layout styling */
-
+.center {
+    text-align: center;
+}
 .container {
     padding-left: 20px;
     padding-right: 20px;
@@ -158,6 +186,27 @@ a:active {
 .row {
     margin: 0px 0;
 }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear; 
+}
+@keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+  }
 
 /* ID's */
 
@@ -167,8 +216,9 @@ a:active {
 }
 #hero {
     background-color:#364652;
-    padding: 20px 0;
-    margin-top: -5px;
+    text-align: center;
+   /* padding: 10px 0;
+    margin-top: -5px; */
     display: inline-block;
     width: 100%;
     padding-left:0px;
@@ -180,13 +230,92 @@ a:active {
     display: inline-block;
     width: 100%;
 }
+#hero span {
+    display: block;
+}
 #hero p {
     text-align: center;
-    color:#F4EDED
-}
-#contact {
-    text-align: center;
+    color:#F4EDED;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #linkedin {
     max-width: 100px;
+}
+
+/* Media Queries */
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+      }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+    main {
+        padding-top: 85px;
+    }
+    body {
+        font-size: 18px;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    #linkedin {
+        max-width: 150px;
+    }
+    .container {
+        display: block;
+    }
+    .button.resume {
+        margin-bottom: 20px;
+    }
+
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+      }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+    main {
+        padding-top: 85px;
+    }
+    body {
+        font-size: 20px;
+    }
+    .col-lg-7 {
+        width: 60%;
+    }
+    .col-lg-5 {
+        width: 40%;
+    }
+    .container {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #linkedin {
+        max-width: 200px;
+    }
+    .button.resume {
+        float: left;
+        padding-bottom: 5px;
+    }
+    h3 {
+       margin-top: 0px;
+    }
 }
