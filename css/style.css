@@ -242,6 +242,9 @@ a:active {
 #linkedin {
     max-width: 100px;
 }
+#animation {
+    width: 100%;
+}
 
 /* Media Queries */
 
