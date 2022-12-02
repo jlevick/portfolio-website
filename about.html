@@ -4,6 +4,7 @@
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/9c353d7e31.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -16,14 +17,17 @@
   <body>
     <header>
       <div class="container">
-        <img class="fit-picture" src="imgs/aspect_home_page_imgs/jaime_levick_logo@1x.png" alt="Jaime Levick">
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="navtoggle" id="myNavtoggle">
+          <img class="fit-picture" src="imgs/aspect_home_page_imgs/jaime_levick_logo@1x.png" alt="Jaime Levick">
+          <nav>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="javascript:void(0)" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </div>
       </div> 
     </header>
     <main>
