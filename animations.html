@@ -18,12 +18,12 @@
     <header>
       <div class="container">
         <div class="navtoggle" id="myNavtoggle">
-          <img class="fit-picture" src="imgs/aspect_home_page_imgs/jaime_levick_logo@1x.png" alt="Jaime Levick">
+          <a href="index.html"><img src="imgs/aspect_home_page_imgs/jaime_levick_logo@1x.png" alt="Jaime Levick" class="fit-picture"/></a>
           <nav>
             <ul>
               <li><a href="index.html">Work</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
               <li><a href="javascript:void(0)" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
             </ul>
           </nav>
@@ -63,7 +63,7 @@
             </div>
         </div>
     </main>
-    <footer class="center">
+    <footer class="center" id="contact">
         <div class="container">
           <h2>Get in Touch</h2>
           <p>Like my work & want to connect?</p>
@@ -80,6 +80,7 @@
           <p>Copyright Jaime Levick 2022</p>
         </div>
       </footer>
+      <script src="js/jquery-3.3.1.min.js"></script>
       <script src="js/scripts.js"></script>
     </body>
   </html>
