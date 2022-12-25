@@ -128,18 +128,18 @@ a:active {
 
 .button { 
     display: inline-block;
-    background-color: #FE5F60;
+    background-color: #301E60;
     color: #F4EDED;
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #FE5F60;
+    border-bottom: 2px solid #301E60;
     text-decoration: none;
     transition: 0.3s opacity;
     transition-property: opacity;
 }
 .button:hover {
-    color: #1B242A;
+    color: #F4EDED;
     text-decoration: none;
     opacity: 0.8;
 }
@@ -229,7 +229,8 @@ a:active {
 
 #work .row { 
     padding-bottom: 25px; 
-    border-bottom: 1px solid #4a4a4a; 
+    border-bottom: 1px solid #4a4a4a;
+    border-top: 15px; 
 }
 #hero {
     background-color:#364652;
@@ -291,6 +292,11 @@ Medium devices (640px and larger)
     body {
         font-size: 18px;
     }
+    .navtoggle.responsive li  {
+        display: block;
+        padding: 0px 0;
+        border-top: 0px solid #FE5F60;
+      }
     .navtoggle li:not(:last-child) {
         display: inline-block;
       }
@@ -309,8 +315,6 @@ Medium devices (640px and larger)
     .button.resume {
         margin-bottom: 20px;
     }
-    
-
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -345,6 +349,7 @@ Large devices (1024px or larger)
     #linkedin {
         max-width: 200px;
     }
+
     .button.resume {
         float: left;
         padding-bottom: 5px;
@@ -355,4 +360,5 @@ Large devices (1024px or larger)
     .fit-picture {
         min-width: 250px;
     }
+      
 }
