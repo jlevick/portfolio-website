@@ -96,9 +96,7 @@ nav > ul > li > a {
     padding: 10px 0;
     border-top: 1px solid #FE5F60;
   }
-.navtoggle.responsive nav {
-    padding: 24px 0 0;
-  }
+  
 .navtoggle.responsive li:last-child  {
     padding: 0 0 10px;
   }  
