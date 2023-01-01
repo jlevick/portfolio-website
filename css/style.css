@@ -96,7 +96,7 @@ nav > ul > li > a {
     padding: 10px 0;
     border-top: 1px solid #FE5F60;
   }
-  
+
 .navtoggle.responsive li:last-child  {
     padding: 0 0 10px;
   }  
@@ -126,12 +126,12 @@ a:active {
 
 .button { 
     display: inline-block;
-    background-color: #301E60;
-    color: #F4EDED;
+    background-color: #FE5F60;
+    color: #000000;
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #301E60;
+    border-bottom: 2px solid #FE5F60;
     text-decoration: none;
     transition: 0.3s opacity;
     transition-property: opacity;
