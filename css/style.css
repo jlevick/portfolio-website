@@ -1,10 +1,11 @@
 /*
-Colors used:
+Colors Used:
 Primary (Whisper): #F4EDED;
 Secondary (Arsenic): #364652;
-Text(Black Pearl): #1B242A;
+Main Text(Black Pearl): #1B242A;
 Main CTA (Watermelon): #FE5F60;
-Secondary Button: #F7D06F;
+CTA and Secondary Text (Black): #000000;
+Secondary Button (Yellow): #F7D06F;
 */
 
 * {
@@ -262,7 +263,12 @@ a:active {
 #animation {
     width: 100%;
 }
-
+a#phoneNumber {
+    color: #F4EDED;
+}
+a#phoneNumber:hover {
+    color:#FE5F60;
+}
 /* Media Queries */
 
 /* ==============================
@@ -272,7 +278,7 @@ Medium devices (640px and larger)
     header {
         text-align: unset;
         padding: 20px 0 13px;
-      }
+    }
     nav {
         width: auto;
         float: right;
@@ -280,10 +286,10 @@ Medium devices (640px and larger)
     }
     nav > ul > li {
         display: inline-block;
-      }
+    }
     nav > ul {
         margin: 1em 0;
-      }
+    }
     main {
         padding-top: 85px;
     }
@@ -294,13 +300,13 @@ Medium devices (640px and larger)
         display: block;
         padding: 0px 0;
         border-top: 0px solid #FE5F60;
-      }
+    }
     .navtoggle li:not(:last-child) {
         display: inline-block;
-      }
+    }
     .navtoggle li:last-child {
         display: none;
-      }
+    }
     .col-md-6 {
         width: 50%;
     }
@@ -321,7 +327,7 @@ Large devices (1024px or larger)
     header {
         text-align: unset;
         padding: 15px 0 15px;
-      }
+    }
     nav {
         width: auto;
         float: right;
